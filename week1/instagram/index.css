@@ -1,0 +1,93 @@
+body{
+    height: 100vh;
+}
+.center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height:350px;
+    width: 380px;
+    border:1px #8e8e8e solid;
+}
+
+
+.login-container{
+    width:380px;
+    height:150px;
+    display: flex;
+    flex-direction: column;
+	justify-content: space-around;
+}
+
+.instaLog{
+    height: 51px;
+    width: 175px;
+}
+
+
+.email-login{
+    height: 36px;
+    width: 260px;
+}
+.password-login{
+    height: 36px;
+    width: 260px;
+}
+.login{
+    color: white;
+    font-size:15px;
+}
+.btn-login{
+    height: 36px;
+    width: 260px;
+    background-color: rgba(var(--d69,0,149,246),.3);
+    border: rgba(var(--d69,0,149,246),.3) 1px solid;
+    border-radius: 5px;
+}
+.facebook-login{
+    color:#385185;
+    margin-top:15px;
+}
+.facebookLogo{
+    height:20px;
+    width:30px;
+    margin-top:15px;
+}
+.pw-lose{
+    margin-top:35px;
+    font-size:13px;
+    color:#385185;
+
+}
+
+._0tv-g{
+    color: #8e8e8e;
+    color: rgba(var(--f52,142,142,142),1);
+    font-size: 13px;
+}
+.K-1uj{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.Z7p_S{
+    margin: 10px 40px 18px;
+}
+.line{
+    border-top: 1px solid #8e8e8e;
+    width:80px;
+    margin: 0 15px;
+}
+.join-container{
+    margin-top:15px;
+    height:62px;
+    width: 380px;
+    border:1px #8e8e8e solid;
+}
+.join{
+    color:#0095f6;
+}
