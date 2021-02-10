@@ -4,7 +4,7 @@
 Flex는 레이아웃 배치 전용 기능으로 고안되었다. <br>
 부모 요소인 div.container를 <strong>Flex Container</strong>라고 부르고,<br>
 자식 요소인 div.item들을 <strong>Flex Item</strong>이라고 부른다.<br>
-컨테이너가 Flex의 영향을 받는 전체 공간이고, 설정된 속성에 따라 각각의 아이템들이 어떤 혀앹로 배치되는 것이라고 생각하면 된다.<br>
+컨테이너가 Flex의 영향을 받는 전체 공간이고, 설정된 속성에 따라 각각의 아이템들이 어떤 형태로 배치되는 것이라고 생각하면 된다.<br>
 
 Flex의 속성들은
 
@@ -26,7 +26,7 @@ flex-direction<br>
 4. column-reverse - 아이템들이 역순으로 세로 배치<br>
 
 ### flex-flow 
-flex-direction과 flex-wrap을 한거번에 지정할 수 있는 단축 속성<br>
+flex-direction과 flex-wrap을 한꺼번에 지정할 수 있는 단축 속성<br>
 flex-direction, flex-wrap의 순으로 한 칸 떼고 써준다.<br>
 
 ### 메인축 방향 정렬
