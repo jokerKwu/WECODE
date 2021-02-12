@@ -12,3 +12,5 @@ $(document).ready(function(e) {
             $('.slide .textSlide .slide-txt').eq(i).css("display","block"); // show the current li
          }, 2000);
 });
+
+

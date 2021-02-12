@@ -31,9 +31,11 @@ header {
     display:flex;
     justify-content: space-between;
     align-items:center;
+    z-index: 2;
 }
 nav{
     width:100%;
+    z-index: 5;
 }
 main{
     padding:1rem;
@@ -58,6 +60,7 @@ body, html{
 }
 section{
     width: 100%;
+    max-width:960px;
     padding:50px 20px;
     flex: 1px;
     margin: 0 auto;
@@ -75,6 +78,7 @@ div{
 }
 
 /**
+--------------------------------------------------------------------------------------
     nav style
 **/
 .mainNav{
@@ -100,6 +104,7 @@ div{
   }
 
 /**
+-----------------------------------------------------------------------------------------
   Juny
 **/
 
@@ -174,10 +179,20 @@ section#aboutMe .container .who .me .meText .meTextImg{
     width:100%;
     max-width:300px;
 }
-
+@keyframes animatetop {
+    0% {
+      top: -30px;
+      opacity: 0;
+    }
+    100% {
+      top: 20px;
+      opacity: 1;
+    }
+  }
 
 
 /**
+===========================================================================================
 skills
 **/
 .skills{
@@ -203,9 +218,96 @@ skills
 }
 
 /**
+======================================================================================
+    portfolio style
+**/
+#portfolio{
+    padding-top:7.5rem;
+    padding-bottom:7.5rem;
+}
+.no-gutters{
+    margin-left : 0;
+    margin-right : 0;
+}
+.row{
+    display: flex;
+    flex-wrap:wrap;
+
+}
+.portfolio-item{
+    display:block;
+    position:relative;
+    overflow:hidden;
+}
+.portfolio-item .caption{
+    display:flex;
+    height:100%;
+    width:100%;
+    background-color: rgba(33, 37, 41, 0.2);
+    position:absolute;
+    top: 0;
+    bottom:0;
+    z-index: 3;
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+}
+.portfolio-item .caption .caption-content{
+    transition: opacity 0.25s;
+    margin-left:5rem;
+    margin-right:5rem;
+    margin-bottom:5rem;
+    color:#fff;
+    margin:auto 2rem 2rem;
+}
+.img-fluid{
+    max-width:100%;
+    height:auto;
+}
+@media (min-width: 992px) {
+    .portfolio-item {
+      max-width: none;
+      margin: 0;
+    }
+    .portfolio-item .caption {
+      -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+      -webkit-clip-path: inset(0px);
+      clip-path: inset(0px);
+    }
+    .portfolio-item .caption .caption-content {
+      transition: opacity 0.25s;
+      margin-left: 5rem;
+      margin-right: 5rem;
+      margin-bottom: 5rem;
+    }
+    .portfolio-item img {
+      -webkit-transition: -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(-1px);
+      clip-path: inset(-1px);
+    }
+    .portfolio-item:hover img {
+      -webkit-clip-path: inset(2rem);
+      clip-path: inset(2rem);
+    }
+    .portfolio-item:hover .caption {
+      background-color: black;
+      -webkit-clip-path: inset(2rem);
+      clip-path: inset(2rem);
+    }
+  }
+
+
+
+
+
+
+/**
+======================================================================================
     footer style
 **/
-
+footer{
+    height:250px;
+}
 footer.footer{
     background-color: white;
     padding-top:5rem;
@@ -255,23 +357,13 @@ footer.footer .list-inline .list-inline-item img{
 .mr-3{
     margin-right: 1rem!important;
 }
-footer.footer a:hover{
-    color:white;
-}
-
+footer.footer .social-link:hover {
+    background-color: black;
+    text-decoration: none;
+  }
 
 /**
 
 test
 */
 
-@keyframes animatetop {
-    0% {
-      top: -30px;
-      opacity: 0;
-    }
-    100% {
-      top: 20px;
-      opacity: 1;
-    }
-  }
