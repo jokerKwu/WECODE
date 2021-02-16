@@ -12,4 +12,5 @@ APP 1기
    2021-02-08 | [ Flex ](https://github.com/jokerKwu/WECODE/blob/main/week1/%5Bstudy02%5D%20Flex.md)
    2021-02-10 | [ 자바스크립트 ](https://github.com/jokerKwu/WECODE/blob/main/week2/%5Bstudy03%5D%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.md)
    2021-02-15 | [ 자바스크립트 ](https://github.com/jokerKwu/WECODE/blob/main/week3/%5Bstudy04%5D%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8.md)
+   2021-02-16 | [ 자바스크립트 함수 ](https://github.com/jokerKwu/WECODE/blob/main/week3/%5Bstudy05%5D%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%20%ED%95%A8%EC%88%98.md)
    
