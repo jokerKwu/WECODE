@@ -28,18 +28,19 @@ RN에서는 기본이 flex이기 때문에 더 편하게 스타일링을 할 수
 이미지를 사용하실 때는 항상 width(가로)와 height(세로)를 넣어줘야된다.<br>
 
 ### 1.외부에 있는 이미지 파일 참조
-<pre><code>
-<Image 
-	style={{ ... }}
-	source={{uri: "이미지 주소"}}
-/>
-</code></pre>
-### 2.내부에 있는 이미지 파일 참조
-<pre><code>
+```
 <Image
-	source={require("이미지 경로")}
-	/>
-	</code></pre>
+	style={{ ... }}
+	source={{uri: "이미지 주소"}}>
+</Image>
+```
+
+### 2.내부에 있는 이미지 파일 참조
+```
+<Image
+	source={require("이미지 경로")}>
+</Image>
+```
 # 컴포넌트란?
 컴포넌트는 독립적이면서 재사용가능한 코드라는 뜻을 가진다.<br>
 컴포넌트 영역은 개발자 설정에 따라서 크기가 다르다.<br>
@@ -68,5 +69,32 @@ let sayHello = (
   )
 </code></pre>
 
-그리고 항상 가장 바깥에는 하나의 컴포넌트로 감싸야 한다.
+그리고 항상 가장 바깥에는 하나의 컴포넌트로 감싸야 한다.<br>
+<pre><code>
+//잘못된 예시
+let wrongList = (
+	<Text>테스트1</Text>
+	<Text>테스트2</Text>
+)
+//잘된 예시
+let goodList = (
+	<View>
+		<Text>테스트1</Text>
+		<Text>테스트2</Text>
+	</View>
+)
+</code></pre>
+
+## 최상위 태그에 <>
+위에서 꼭 가장 바깥에는 하나의 컴포넌트만 있어야 한다.<br>
+그 컴포넌트를 의미 없게 View 컴포넌트를 사용하기 보다는 빈 컴포넌트를 사용할 수도 있다.<br>
+
+## import
+import는 프로그래밍에서는 가져온다는 의미로 사용된다.<br>
+import A from B 는 의미 그대로 B로부터 A를 가져오는 것이다.<br>
+
+## export default
+import와 반대되는 의미이다. 뒤에 default는 붙일 수도 있고 안 붙일 수도 있다.<br>
+default를 붙이게 되면 다른 파일에서 이 파일을 import 할 때 아무 이름으로 가져올 수 있다.<br>
+하지만 default를 붙이지 않으면 어떤 함수를 import 할지 모르게 되므로 꼭 그 함수이름으로 가져와야 한다.<br>
 
