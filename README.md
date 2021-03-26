@@ -18,5 +18,8 @@ APP 1기
    2021-02-23 | [ JSX ](https://github.com/jokerKwu/WECODE/blob/main/week4/%5Bstudy08%5D%20JSX.md)
    2021-02-24 | [ RN 장,단점 ](https://github.com/jokerKwu/WECODE/blob/main/week4/%5Bstudy09%5D%20RN%20%EC%9E%A5%2C%EB%8B%A8%EC%A0%90.md)
    2021-03-02 | [ SOAP, REST ](https://github.com/jokerKwu/WECODE/blob/main/week4/%5Bstudy10%5D%20SOAP,%20REST.md)
+   2021-03-26 | [ Promise ](https://github.com/jokerKwu/WECODE/blob/main/week5/Promise.md)
+
+
 
 
