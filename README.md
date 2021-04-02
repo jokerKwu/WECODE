@@ -1,6 +1,8 @@
 # WECODE
-APP 1기
+APP 1기 
 
+## Skills
+HTML, CSS, Javascript, React-native
 
 ## Daily_Study 
 
